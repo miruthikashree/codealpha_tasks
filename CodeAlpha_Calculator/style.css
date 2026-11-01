@@ -1,0 +1,132 @@
+
+/* 1. Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Style the webpage */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+    padding: 20px;
+}
+
+/* 3. Calculator container */
+.calculator {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    background: #1e293b;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* 4. Calculator heading */
+.calculator h1 {
+    text-align: center;
+    color: #f8fafc;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 5. Display screen */
+#display {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 28px;
+    text-align: right;
+}
+
+/* 6. Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+/* 7. Common button design */
+.buttons button {
+    min-width: 0;
+    height: 58px;
+    border: none;
+    border-radius: 12px;
+    background: #334155;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+/* 8. Hover effect */
+.buttons button:hover {
+    background: #475569;
+    transform: translateY(-2px);
+}
+
+/* 9. Arithmetic operators */
+.buttons .operator {
+    background: #7c3aed;
+}
+
+.buttons .operator:hover {
+    background: #6d28d9;
+}
+
+/* 10. Clear and delete */
+.buttons .special {
+    background: #be123c;
+}
+
+.buttons .special:hover {
+    background: #9f1239;
+}
+
+/* 11. Equals button */
+.buttons .equals {
+    background: #059669;
+    grid-row: span 2;
+    height: auto;
+}
+
+.buttons .equals:hover {
+    background: #047857;
+}
+
+/* 12. Make zero wider */
+.buttons .zero {
+    grid-column: span 2;
+}
+
+/* 13. Keyboard focus */
+.buttons button:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 2px;
+}
+
+/* 14. Small-screen adjustment */
+@media (max-width: 380px) {
+    .calculator {
+        padding: 16px;
+    }
+
+    .buttons {
+        gap: 7px;
+    }
+
+    .buttons button {
+        height: 52px;
+        font-size: 18px;
+    }
+}
