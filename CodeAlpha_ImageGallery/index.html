@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">&#10094;</button>
+
+    <img id="lightbox-img">
+
+    <button class="next">&#10095;</button>
+
+</div>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore • Memories • Moments</p>
+    </header>
+    <section class="filters">
+
+    <button onclick="filterImages('all')">All</button>
+
+    <button onclick="filterImages('nature')">Nature</button>
+
+    <button onclick="filterImages('animals')">Animals</button>
+
+    <button onclick="filterImages('art')">Art</button>
+
+</section>
+
+    
+
+    <section class="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature1.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature2.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature3.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature4.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature5.jpeg" alt="Nature">
+        </div>
+
+        
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature6.jpeg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature7.jpeg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature8.jpeg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature9.jpeg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature10.jpeg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature11.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature12.jpg" alt="Nature">
+        </div>
+
+
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal1.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal2.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal3.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal4.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal5.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal6.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal7.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal8.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal9.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal10.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal11.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="animals">
+            <img src="images/animal12.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art1.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art2.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art3.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art4.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art5.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art6.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art7.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art8.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art9.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art10.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art11.jpg" alt="Art">
+        </div>
+
+        <div class="gallery-item" data-category="art">
+            <img src="images/art12.jpg" alt="Art">
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
